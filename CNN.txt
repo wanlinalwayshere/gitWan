@@ -1,0 +1,35 @@
+Tensorflow-CNN
+
+CNN is Convolutional Neural Network.
+
+If there is a colourful image,the image includes three elements:R,G,B--(Red,Green,Blue).
+This three channels can be the depth of an image.
+So the size of the image is 256*256*3. For every pixel, it has RGB three channels.
+
+We should compress the size of an image.How?
+We compress the length and width of the image and increase the depth of image. Layer by layer...
+
+Finally,it can generate a classify by the data of the depth.
+For example,for a 0 to 9 number list,we can get [0,0,0,1,0,0,0,0,0,0,0] for number 3.
+
+Patch or kernel/stride
+Patch is a part that we pull away from the image. The patch has its own size of length and depth.
+By the above operation, every patch will become a size of 1*1*k array.
+
+Stride is the step of pulling away across the pixel. If stride==1,we pull away aross 1 pixel.
+
+This method of pulling away data is called padding(Valid padding/ Same padding)
+
+Pooling:a method to reduce the range of the CNN feature map.
+Pooling size,pooling stride.
+
+image
+convolution
+max pooling
+convolution
+max pooling
+fully connected
+fully connected
+classify
+
+
